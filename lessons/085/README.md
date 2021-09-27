@@ -73,3 +73,22 @@ eksctl delete cluster -f eks.yaml
 ```bash
 helm repo remove eks
 ```
+
+## Links
+
+- [Application load balancing on Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html)
+- [GitHub aws-load-balancer-controller](https://github.com/kubernetes-sigs/aws-load-balancer-controller)
+- [AWS Load Balancer Controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.2/guide/ingress/annotations/)
+
+## Notes
+
+Prerequisites
+- The AWS Load Balancer Controller provisioned on your cluster
+- At least two subnets in different Availability Zones.
+- Security group attached to worker node must have following label
+  - `Key – kubernetes.io/cluster/cluster-name`
+  - `Value – shared or owned`
+- The cluster-name value is for your Amazon EKS cluster. The `shared` value allows more than one cluster to use the subnet.
+- Subnets may be tagged
+  - `Key – kubernetes.io/cluster/cluster-name`
+  - `Value – shared or owned`
