@@ -9,6 +9,8 @@
 
 ## Create EKS with Terraform
 
+## Setup IAM role for service accounts
+
 ## Create an IAM OIDC provider
 
 - Copy `OpenID Connect provider URL` from the EKS cluster `Configuration` tab
@@ -25,7 +27,6 @@ https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v
 ```
 
 - Create `AWSLoadBalancerControllerIAMPolicy` IAM policy
-
 
 ## Create a IAM role and ServiceAccount for the AWS Load Balancer controller
 
@@ -92,3 +93,28 @@ Prerequisites
 - Subnets may be tagged
   - `Key – kubernetes.io/cluster/cluster-name`
   - `Value – shared or owned`
+
+- Ingress TrafficL
+  - Instance mode
+  - IP mode
+
+- You can run the controller on a non-EKS cluster, for example kops or vanilla k8s. Here are the things to consider -
+  - In lieu of IAM for service account, you will have to manually attach the IAM permissions to your worker nodes IAM roles
+  - Ensure subnets are tagged appropriately for auto-discovery to work
+  - For IP targets, pods must have IPs from the VPC subnets. You can configure amazon-vpc-cni-k8s plugin for this purpose.
+
+- [Pod readiness gate support](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.2/deploy/pod_readiness_gate/)
+  - example shows how it works/effective
+
+- Create Ingress and Service
+
+- TLS ingress
+
+AWS load balancer controller has closer integration between aws and kubernetes vs nginx
+
+IP mode¶
+IP target mode supports pods running on AWS EC2 instances and AWS Fargate. In this mode, the AWS NLB targets traffic directly to the Kubernetes pods behind the service, eliminating the need for an extra network hop through the worker nodes in the Kubernetes cluster.
+
+The AWS in-tree controller ignores those services resources that have the service.beta.kubernetes.io/aws-load-balancer-type annotation as external
+service.beta.kubernetes.io/aws-load-balancer-type: "external"
+https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.2/guide/service/nlb/

@@ -1,3 +1,5 @@
+---
+replicaCount: 1
 clusterName: demo
 serviceAccount:
   create: true
