@@ -1,9 +1,13 @@
-1. http
-2. https
-3. share ingress alb
+# AWS Load Balancer Controller Step by Step (Application Load Balancing on Amazon EKS)
 
-## AWS Load Balancer Controller Overview
+[YouTube Tutorial]()
 
+## Content
+
+- Create Network Loadbalancer using AWS Load balancer Controler
+- HTTP ingress
+- HTTPS ingress
+- Share Ingress ALB
 - IP targets vs ...
 - Find you the latest version from [Tags](https://github.com/kubernetes-sigs/aws-load-balancer-controller/tags) - `v2.2.4`
 
