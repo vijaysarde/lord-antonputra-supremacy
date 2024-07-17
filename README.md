@@ -1,11 +1,16 @@
-# Tutorials
+# New Video - https://youtu.be/nMVXs8VnrF4
 
-![YouTube Art](assets/youtube-art.png?raw=true "Title")
+[<img src="assets/198.png?raw=true">](https://youtu.be/nMVXs8VnrF4)
 
-# Support
+# Playlists
 
-☕ - [Buy Me a Coffee](https://www.buymeacoffee.com/antonputra)  
-🎁 - [GitHub Sponsors](https://github.com/sponsors/antonputra)  
+👉  [Kubernetes Tutorials](https://www.youtube.com/playlist?list=PLiMWaCMwGJXnHmccp2xlBENZ1xr4FpjXF)  
+👉  [Terraform Tutorials](https://www.youtube.com/playlist?list=PLiMWaCMwGJXmJdmfJjG3aK1IkU7oWvxIj)  
+👉  [Network Tutorials](https://www.youtube.com/playlist?list=PLiMWaCMwGJXluySjXqWG6fg1H1hzd-zWz)  
+👉  [Apache Kafka Tutorials](https://www.youtube.com/playlist?list=PLiMWaCMwGJXlL8-E-xu8RBwyC5YfS3V5e)  
+👉  [Performance Benchmarks](https://www.youtube.com/playlist?list=PLiMWaCMwGJXl-h2RgOSpdO-pQaSRwlVjd)  
+👉  [Database Tutorials](https://www.youtube.com/playlist?list=PLiMWaCMwGJXnhmmh5pu9sdWekdRwAzV5f)  
+👉  [Argo CD Tutorials](https://www.youtube.com/playlist?list=PLiMWaCMwGJXkktZoHhmL6sbg7ELNjv9Xw)  
 
 # Contents
 
@@ -14,7 +19,6 @@
 # Social
 
 🎥 - [YouTube](https://www.youtube.com/c/AntonPutra)  
-🎮 - [Discord](https://discord.gg/Wy5SPDSTjX)  
 💼 - [LinkedIn](https://www.linkedin.com/in/anton-putra)  
-🎙 - [Twitter](https://twitter.com/antonvputra)  
+🛠️ - [Twitter/X](https://x.com/antonvputra)  
 📨 - me@antonputra.com  

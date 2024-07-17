@@ -32,7 +32,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-.terraform.lock.hcl
 
 ########## Node.gitignore ##########
 # Logs
@@ -154,5 +153,25 @@ dist
 
 # python
 .venv
+__pycache__
 
 .DS_Store
+*.zip
+*.lock
+*target
+
+# Rust dependencies
+!Cargo.lock
+
+# For nginx log
+!access.log
+
+# For VScode
+.vscode
+
+# For certs
+*.csr
+*.pem
+
+# Terragrunt
+.terragrunt-cache
