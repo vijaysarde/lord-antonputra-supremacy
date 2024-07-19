@@ -2,7 +2,9 @@
 
 ## Watched by me
 
-- [038 - How to IAM user/role to EKS cluster?](../lessons/038)
+- [038 - How to add IAM user/role to EKS cluster?](../lessons/038)
+- [103 - How to Add IAM User and IAM Role to AWS EKS Cluster?](../lessons/103)
+
 - [065 - IAM Roles for Service Accounts & Pods: (IRSA EKS | IAM OIDC Provider | AWS EKS | Kubernetes)](../lessons/065)
 
 
