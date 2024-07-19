@@ -6,6 +6,8 @@ metadata:
   namespace: monitoring
   annotations:
     cert-manager.io/issuer: letsencrypt-dns01-prod
+    cert-manager.io/duration: 2160h    # 90d
+    cert-manager.io/renew-before: 360h # 15d
 spec:
   ingressClassName: external-nginx
   tls:
