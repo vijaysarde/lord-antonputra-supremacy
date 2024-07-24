@@ -7,7 +7,7 @@
 
 - [065 - IAM Roles for Service Accounts & Pods: (IRSA EKS | IAM OIDC Provider | AWS EKS | Kubernetes)](../lessons/065)
 
-
+- [AWS API Gateway - EC2 Integration (Console + Terraform | Backend | Endpoint | HTTP | Node JS)](../lessons/118)
 
 
 ## By Anton Putra
